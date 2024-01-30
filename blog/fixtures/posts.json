@@ -1,0 +1,28 @@
+[
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Forgoten Phaistos cyvilisation.",
+            "slug": "forgoten-phaistos-cyvilisation",
+            "author": 3,
+            "content": "<p><b>Immersion: The story about the future\r\n</b></p><p>\r\nCouldn’t  someone so powerful live without our sacrifices? Wouldn’t he have everything? The Oracle replied, Agis has left because of human reasons. For his clan and for his ambitions he betrayed the Principles. He wants to take care of his own people at the cost of other families. All the clans lived in harmony for ages, she continued, raising her voice and looking around at the gathered people. We worked and built together, we mixed blood in accordance with the Principles. We did not grow in strength by causing misery and unhappiness to our relatives and neighbours. What god worth praying for would like to divide his people and sew hatred into their hearts ?!</p>",
+            "created_on": "2023-07-14T13:58:53.884Z",
+            "status": 1,
+            "updated_on": "2024-01-30T09:43:19.754Z"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Is that like a dream?",
+            "slug": "is-that-like-a-dream",
+            "author": 2,
+            "content": "<p><b>MayaVR draws you in\r\n</b></p><p>\r\nAnd MayaVR draws you in, sometimes making it hard to remember that it's just a game. Everything is real, you can feel pain, smell, taste, a whole range of emotions. This world offers a certain wildness, contact with nature and people who are unpolluted by technology and civilization for whom Mother Earth is a goddess, and the Principles guarantee order.</p>",
+            "created_on": "2023-07-14T13:58:53.884Z",
+            "status": 1,
+            "updated_on": "2024-01-30T10:43:19.754Z"
+        }
+    }
+]
