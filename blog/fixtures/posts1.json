@@ -1,0 +1,15 @@
+[
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Excerpt from the review of Immersion by Erick Pol",
+            "slug": "excerpt-from-the-review-of-Immersion-by-Erick-Pol",
+            "author": 4,
+            "content": "<p><b>Time travel can be at your fingertips\r\n</b></p><p>\r\nThanks to MayaVR, time travel can be at your fingertips. Maybe "time travel "is an exaggeration but MayaVR can create a world that almost perfectly imitates Crete in 1627 BC on the basis of archaeological data. Ben can experience himself how realistic this game is. The problem is not only the additional, authorized access of other participants, but also the unauthorized access of intruders who were never meant to appear in the system. In the time when Artificial Intelligence was created, violence could be born from a small grain of chaos and in ancient times when existing rules ceased to be important violence became the main currency.</p>",
+            "created_on": "2018-07-14T13:58:53.884Z",
+            "status": 1,
+            "updated_on": "2024-01-31T10:43:19.754Z"
+        }
+    }
+]
