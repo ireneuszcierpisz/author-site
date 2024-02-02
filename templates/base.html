@@ -1,4 +1,6 @@
-{% load static %} {% url 'home' as home_url %}
+{% load static %} 
+{% url 'home' as home_url %}
+{% url 'about' as about_url %}
 
 <!DOCTYPE html>
 <html class="h-100" lang="en">
@@ -63,13 +65,18 @@
               <a
                 class="nav-link {% if request.path == home_url %}active{% endif %}"
                 aria-current="page"
-                href="#"
+                href="{% url 'home' %}"
                 >Home</a
               >
             </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if request.path == about_url %}active{%endif%}" aria-current="page"
+                    href="{% url 'about' %}">About</a>
+            </li>
           </ul>
           <span class="navbar-text text-muted">
-            What I think about when I'm not writing
+            What am I thinking about when I'm not writing
           </span>
         </div>
       </div>
