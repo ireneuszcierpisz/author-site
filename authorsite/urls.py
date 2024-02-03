@@ -16,15 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-# from blog import views as index_views
 
 urlpatterns = [
-    # path('', index_views.index, name='index'),
     path('admin/', admin.site.urls),
     path("about/", include("about.urls"), name="about-urls"),
+    path("contact/", include("contact.urls"), name="contact-urls"),
     path("accounts/", include("allauth.urls")),
     path("", include("blog.urls"), name="blog-urls"),
     # wire up the django_summernote app to the authorsite project
     path('summernote/', include('django_summernote.urls')),
 ]
-
