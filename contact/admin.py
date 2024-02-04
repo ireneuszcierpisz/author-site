@@ -10,4 +10,4 @@ class ContactAdmin(SummernoteModelAdmin):
 
 @admin.register(ContactRequest)
 class ContactRequestAdmin(admin.ModelAdmin):
-    list_display = ('message', 'read',)
+    list_display = ('message', 'read', 'answered',)

@@ -14,6 +14,7 @@ class ContactRequest(models.Model):
     email = models.EmailField()
     message = models.TextField()
     read = models.BooleanField(default=False)
+    answered = models.BooleanField(default=False)
 
     def __str__(self):
         return f"Contact request from {self.name}"
