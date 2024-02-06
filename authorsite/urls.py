@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("about/", include("about.urls"), name="about-urls"),
     path("contact/", include("contact.urls"), name="contact-urls"),
+    path("excerpt/", include("excerpt.urls"), name="excerpt-urls"),
     path("accounts/", include("allauth.urls")),
     path("", include("blog.urls"), name="blog-urls"),
     # wire up the django_summernote app to the authorsite project
