@@ -4,12 +4,11 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-4 text-center">
-            <img class="card-img-top" src="{% static 'images/pict0.jpg' %}" width="75%" alt="placeholder"/>
-            <!-- {% if "placeholder" in excerpt.featured_image.url %}
-            <img class="card-img-top" src="{% static 'images/pict0.jpg' %}" width="75%" alt="placeholder image">
+            {% if "placeholder" in excerpt.featured_image.url %}
+            <img class="card-img-top excerpt-img" src="{% static 'images/pict0.jpg' %}" alt="placeholder image">
             {% else %}
-            <img class="card-img-top" src=" {{ excerpt.featured_image.url }}" width="75%" alt="{{ excerpt.title }}">
-            {% endif %} -->
+            <img class="card-img-top excerpt-img" src=" {{ excerpt.featured_image.url }}" alt="{{ excerpt.title }}">
+            {% endif %}
         </div>
         <div class="col-8">
             <h2>{{ excerpt.title }}</h2>
