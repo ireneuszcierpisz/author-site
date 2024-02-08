@@ -7,9 +7,9 @@
         <div class="col-4 text-center">
             <!-- <img src="{% static 'images/pict1.jpg' %}" width="75%" alt="placeholder"/> -->
             {% if "placeholder" in contact.featured_image.url %}
-            <img src="{% static 'images/pict1.jpg' %}" width="75%" alt="placeholder image">
+            <img src="{% static 'images/pict1.jpg' %}" class="card-img-top" alt="placeholder image">
             {% else %}
-            <img src=" {{ contact.featured_image.url }}" width="75%" alt="{{ contact.title }}">
+            <img src=" {{ contact.featured_image.url }}" class="card-img-top" alt="{{ contact.title }}">
             {% endif %}
         </div>
         <div class="col-8">

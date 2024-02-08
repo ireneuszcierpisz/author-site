@@ -103,26 +103,35 @@ content | TextField
 ![comment-alert](https://github.com/ireneuszcierpisz/author-site/blob/main/media/comment-alert.png)
 ![message-alert](https://github.com/ireneuszcierpisz/author-site/blob/main/media/message-alert.png)
 ![sign-out-alert](https://github.com/ireneuszcierpisz/author-site/blob/main/media/sign-out-alert.png)
+![sign-in](https://github.com/ireneuszcierpisz/author-site/blob/main/media/sign-in-alert.png)
 
 ### Contact page
+![contact](https://github.com/ireneuszcierpisz/author-site/blob/main/media/contact.png)
 
 ### Excerpt page
-
+![excerpt](https://github.com/ireneuszcierpisz/author-site/blob/main/media/excerpt.png)
 
 ## Validator testing
-
-### Python Linter validator
-![python-linter](https://github.com/ireneuszcierpisz/author-site/blob/main/media/python-linter.png)
 
 ### W3C Markup Validator
 
 #### index.html
+
+
 #### post_detail.html
+
+
 #### contact.html
+
+
 #### about.html
+
+
 #### excerpt.html
 
+
 ### amiresponsive
+
 
 ### Behaviour Driven Development tests
 

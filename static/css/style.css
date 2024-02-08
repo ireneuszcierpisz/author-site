@@ -91,10 +91,6 @@ body {
     z-index: 100;
 }
 
-.profile-image {
-    width: 75%;
-}
-
 .post-link {
     text-decoration: none;
     color: #445261;
@@ -167,4 +163,9 @@ body {
 .excerpt-img {
     width: 85%;
     height: 90%;
+}
+
+.context-img {
+    width: 50%;
+    height: auto;
 }
