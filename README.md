@@ -130,3 +130,100 @@ content | TextField
 
 ### Automated Django Testing
 
+
+### Deployment
+
+#### Install packages:
+```
+pip3 install Django~=4.2.1
+pip3 install gunicorn~=20.1
+pip3 install dj-database-url~=0.5 psycopg2~=2.9
+pip3 install django-summernote~=0.8.20.0
+pip3 install whitenoise~=5.3.0
+pip3 install django-allauth~=0.57.0
+pip3 install django-crispy-forms~=2.0 crispy-bootstrap5~=0.7
+pip3 install cloudinary~=1.36.0 dj3-cloudinary-storage~=0.0.6 urllib3~=1.26.15
+```
+
+#### Create requirements
+`pip3 freeze --local > requirements.txt`
+
+#### Create project
+`django-admin startproject my_project`
+
+#### Create app
+`python3 manage.py startapp my_app`
+
+#### Add apps to settings.py
+
+```
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'cloudinary_storage',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'crispy_forms',
+    'crispy_bootstrap5',
+    'django_summernote',
+    'cloudinary',
+    'blog',
+    'about',
+    'contact',
+    'excerpt',
+]
+```
+
+#### Create database
+
+- Create an ElephantSQL.com account
+- Navigate to ElephantSQL.com and click “Log in”
+- Sign in with GitHub
+- Authorise ElephantSQL with your selected GitHub account
+- In the Create new team form:
+    - Add a team name
+    - Read and agree to the Terms of Service
+    - Select Yes for GDPR
+    - Provide your email address
+    - Click “Create Team”
+- Give your plan a Name
+- Select the Tiny Turtle (Free) plan
+- Select Region
+- Click Review
+- Click Create instance
+- Click on your newly named instance
+- Click on STATS
+- Click on DETAILS and copy the URL
+
+#### Set up env.py
+```
+import os
+os.environ.setdefault("DATABASE_URL", "postgres: url_from_postgres")
+```
+
+#### Import env.py to settings
+`if os.path.isfile('env.py'): import env`
+
+
+### Deployment to Heroku
+- in project settings.py:  `DEBUG=False`
+- in Heroku > Settings > ConfigVars: 
+  key: `DATABASE_URL`   value: `url_from_postgres`
+
+
+### Credits
+
+- Content
+        - the content of the site is only my invention
+- Media
+        - all images are my own
+- Code
+        - the code for creating this project was taken from Code Institute lecture
+- Mentor
+        - thanks to my mentor Gareth McGirr for support
