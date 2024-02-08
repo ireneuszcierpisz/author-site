@@ -115,23 +115,18 @@ content | TextField
 
 ### W3C Markup Validator
 
-#### index.html
-
-
-#### post_detail.html
-
+#### post_index.html
+![w3-posts](https://github.com/ireneuszcierpisz/author-site/blob/main/media/w3-posts.png)
 
 #### contact.html
-
+![w3-contact](https://github.com/ireneuszcierpisz/author-site/blob/main/media/w3-contact.png)
 
 #### about.html
-
+![w3-about](https://github.com/ireneuszcierpisz/author-site/blob/main/media/w3-about.png)
 
 #### excerpt.html
+![w3-excerpt](https://github.com/ireneuszcierpisz/author-site/blob/main/media/w3-excerpt.png)
 
 
-### amiresponsive
-
-
-### Behaviour Driven Development tests
+### Automated Django Testing
 
