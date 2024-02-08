@@ -100,16 +100,28 @@ content | TextField
 ![comment](https://github.com/ireneuszcierpisz/author-site/blob/main/media/comment.png)
 
 ### Alerts showing success or error message to a user
+
+#### Comment alert
 ![comment-alert](https://github.com/ireneuszcierpisz/author-site/blob/main/media/comment-alert.png)
+
+#### Message alert
 ![message-alert](https://github.com/ireneuszcierpisz/author-site/blob/main/media/message-alert.png)
+
+#### Sign out alert
 ![sign-out-alert](https://github.com/ireneuszcierpisz/author-site/blob/main/media/sign-out-alert.png)
+
+#### Sign in alert
 ![sign-in](https://github.com/ireneuszcierpisz/author-site/blob/main/media/sign-in-alert.png)
+
 
 ### Contact page
 ![contact](https://github.com/ireneuszcierpisz/author-site/blob/main/media/contact.png)
 
+
 ### Excerpt page
 ![excerpt](https://github.com/ireneuszcierpisz/author-site/blob/main/media/excerpt.png)
+
+
 
 ## Validator testing
 
@@ -128,7 +140,9 @@ content | TextField
 ![w3-excerpt](https://github.com/ireneuszcierpisz/author-site/blob/main/media/w3-excerpt.png)
 
 
+
 ### Automated Django Testing
+
 
 
 ### Deployment
