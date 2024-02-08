@@ -7,7 +7,8 @@
 
 ## Database design models
 
-1. Class name : Post
+### Class name : Post
+   
 | type | field name |
 | :---: | :---: |
 title | CharField
@@ -19,7 +20,9 @@ created_on | DateTimeField
 status | IntegerField
 updated_on | DateTimeField
 
-2. Class name : Comment
+
+### Class name : Comment
+   
 | type | field name |
 | :---: | :---: |
 title | CharField
@@ -30,7 +33,8 @@ approved | BooleanField
 created_on | DateTimeField
 
 
-3. Class name : About
+### Class name : About
+
 | type | field name |
 | :---: | :---: |
 title | CharField
@@ -39,7 +43,8 @@ updated_on | DateTimeField
 content | TextField
 
 
-4. Class name : Contact
+### Class name : Contact
+
 | type | field name |
 | :---: | :---: |
 title | CharField
@@ -47,7 +52,9 @@ featured_image | CloudinaryField
 updated_on | DateTimeField
 content | TextField
 
-5. Class name : ContactRequest
+
+### Class name : ContactRequest
+
 | type | field name |
 | :---: | :---: |
 name | CharField
@@ -57,7 +64,7 @@ read | BooleanField
 answered | BooleanField
 
 
-6. Class name : Excerpt
+### Class name : Excerpt
 | type | field name |
 | :---: | :---: |
 title | CharField
