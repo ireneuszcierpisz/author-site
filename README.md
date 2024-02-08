@@ -1,4 +1,4 @@
-![CI logo](logo_small.png)
+![writer|site logo](https://github.com/ireneuszcierpisz/author-site/blob/main/media/writersite-logo.png)
 
 ## Introduction ##
 
@@ -71,4 +71,58 @@ title | CharField
 featured_image | CloudinaryField
 updated_on | DateTimeField
 content | TextField
+
+## Agile workflow was used in the development of author-site project:
+- work in small iterations
+- use Github kanban board
+
+### GitHub Features were used to organize the build process:
+
+#### list of issues
+![issues](https://github.com/ireneuszcierpisz/author-site/blob/main/media/issues.png)
+
+#### kanban board of the done issues
+![kanban-board](https://github.com/ireneuszcierpisz/author-site/blob/main/media/kanban-board.png)
+
+
+## Features
+
+### Admin panel where a superuser can see and manipulate data
+![admin panel](https://github.com/ireneuszcierpisz/author-site/blob/main/media/admin-panel.png)
+
+### Allauth authentication
+![sign-up](https://github.com/ireneuszcierpisz/author-site/blob/main/media/sign-up.png)
+
+### Home page where a user can see posts
+![home](https://github.com/ireneuszcierpisz/author-site/blob/main/media/home.png)
+
+### Post detail page with comments field where a user can add, update and delete a comment
+![comment](https://github.com/ireneuszcierpisz/author-site/blob/main/media/comment.png)
+
+### Alerts showing success or error message to a user
+![comment-alert](https://github.com/ireneuszcierpisz/author-site/blob/main/media/comment-alert.png)
+![message-alert](https://github.com/ireneuszcierpisz/author-site/blob/main/media/message-alert.png)
+![sign-out-alert](https://github.com/ireneuszcierpisz/author-site/blob/main/media/sign-out-alert.png)
+
+### Contact page
+
+### Excerpt page
+
+
+## Validator testing
+
+### Python Linter validator
+![python-linter](https://github.com/ireneuszcierpisz/author-site/blob/main/media/python-linter.png)
+
+### W3C Markup Validator
+
+#### index.html
+#### post_detail.html
+#### contact.html
+#### about.html
+#### excerpt.html
+
+### amiresponsive
+
+### Behaviour Driven Development tests
 
