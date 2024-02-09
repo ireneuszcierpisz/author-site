@@ -87,43 +87,61 @@ content | TextField
 
 ## Features
 
+
 ### Admin panel where a superuser can see and manipulate data
+
 ![admin panel](https://github.com/ireneuszcierpisz/author-site/blob/main/media/admin-panel.png)
 
+
 ### Allauth authentication
+
 ![sign-up](https://github.com/ireneuszcierpisz/author-site/blob/main/media/sign-up.png)
 
+
 ### Home page where a user can see posts
+
 ![home](https://github.com/ireneuszcierpisz/author-site/blob/main/media/home.png)
 
+
 ### Post detail page with comments field where a user can add, update and delete a comment
+
 ![comment](https://github.com/ireneuszcierpisz/author-site/blob/main/media/comment.png)
-
-### Alerts showing success or error message to a user
-
-#### Comment alert
-![comment-alert](https://github.com/ireneuszcierpisz/author-site/blob/main/media/comment-alert.png)
-
-#### Message alert
-![message-alert](https://github.com/ireneuszcierpisz/author-site/blob/main/media/message-alert.png)
-
-#### Sign out alert
-![sign-out-alert](https://github.com/ireneuszcierpisz/author-site/blob/main/media/sign-out-alert.png)
-
-#### Sign in alert
-![sign-in](https://github.com/ireneuszcierpisz/author-site/blob/main/media/sign-in-alert.png)
 
 
 ### Contact page
+
 ![contact](https://github.com/ireneuszcierpisz/author-site/blob/main/media/contact.png)
 
 
 ### Excerpt page
+
 ![excerpt](https://github.com/ireneuszcierpisz/author-site/blob/main/media/excerpt.png)
 
 
 
-## Validator testing
+## TESTING
+
+
+#### Write a comment then click submit button and see success alert
+
+![comment-alert](https://github.com/ireneuszcierpisz/author-site/blob/main/media/comment-alert.png)
+
+
+#### Fill in a contact form then click submit so success aler apear
+
+![message-alert](https://github.com/ireneuszcierpisz/author-site/blob/main/media/message-alert.png)
+
+
+#### After click Sign out there is an alert before signing out
+
+![sign-out-alert](https://github.com/ireneuszcierpisz/author-site/blob/main/media/sign-out-alert.png)
+
+
+#### after completing login and password click for Sign in and success alert will show up
+
+![sign-in](https://github.com/ireneuszcierpisz/author-site/blob/main/media/sign-in-alert.png)
+
+
 
 ### W3C Markup Validator
 
@@ -134,32 +152,39 @@ content | TextField
 ![w3-contact](https://github.com/ireneuszcierpisz/author-site/blob/main/media/w3-contact.png)
 
 #### about.html
+
 ![w3-about](https://github.com/ireneuszcierpisz/author-site/blob/main/media/w3-about.png)
 
 #### excerpt.html
+
 ![w3-excerpt](https://github.com/ireneuszcierpisz/author-site/blob/main/media/w3-excerpt.png)
 
 
 
 ### Automated Django Testing using the built-in SQLite3 database
+
 - modify settings.py
   `import sys`
   beneath the DATABASES declaration add:
   `if 'test' in sys.argv: DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'`
   
-- sample result of testing comment form if is it valid:
-  ```
-codeany@b1233f8c8b5d:/workspaces/author-site$ python manage.py test
-Found 2 test(s).
-Creating test database for alias 'default'...
-System check identified no issues (0 silenced).
-..
-----------------------------------------------------------------------
-Ran 2 tests in 0.003s
+- in blog/test_forms.py define class TestCommentForm
+- in contact/test_form.py define class TestContactForm
+- define positive and negative tests inside a class
+- run test `$ python3 manage.py test`
+        - sample result of testing comment form and contact form if are they valid :
+  
+`codeany@b1233f8c8b5d:/workspaces/author-site$ python manage.py test`
+`Found 4 test(s).`
+`Creating test database for alias 'default'...`
+`System check identified no issues (0 silenced).`
+`...F`
+`FAIL: test_form_is_valid (contact.test_form.TestContactForm)`
+`File "/workspaces/author-site/contact/test_form.py", line 17, in test_form_is_valid`
+`AssertionError: False is not true : Email field is empty but form is valid`
+`Ran 4 tests in 0.028s`
+`FAILED (failures=1)`
 
-OK
-Destroying test database for alias 'default'...
-```
 
 
 

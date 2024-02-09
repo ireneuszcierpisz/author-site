@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '8000-ireneuszcierpisz-author-zaz15mbzaj.us2.codeanyapp.com', '.herokuapp.com']
+    '8000-ireneuszcierpisz-author-dwvcqbnl6v.us2.codeanyapp.com', '.herokuapp.com']
 
 # Application definition
 
