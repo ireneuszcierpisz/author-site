@@ -141,7 +141,25 @@ content | TextField
 
 
 
-### Automated Django Testing
+### Automated Django Testing using the built-in SQLite3 database
+- modify settings.py
+  `import sys`
+  beneath the DATABASES declaration add:
+  `if 'test' in sys.argv: DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'`
+  
+- sample result of testing comment form if is it valid:
+  ```
+codeany@b1233f8c8b5d:/workspaces/author-site$ python manage.py test
+Found 2 test(s).
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.003s
+
+OK
+Destroying test database for alias 'default'...
+```
 
 
 
